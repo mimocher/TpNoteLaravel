@@ -29,7 +29,7 @@
             <?php foreach($speaker->events as $event): ?>
                 <li class="list-group-item">
                     <a href="{{ route('events.show', $event) }}">{{ $event->title }}</a> - 
-                    <em>{{ $event->pivot->topic }}</em>
+           
                 </li>
             <?php endforeach; ?>
         </ul>
@@ -40,4 +40,5 @@
         </div>
     </div>
 </body>
+
 </html>
